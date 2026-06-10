@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Cocos Projects\\SlotGameProgrammingTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ResultsGenerator.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ResultsGenerator.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ReelsManager.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ReelsManager.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Reel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Reel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Symbol.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Symbol.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\Controls\\SpinButton.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_ProjectSpecific\\Scripts\\Controls\\SpinButton.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\GameEvents.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_ProjectSpecific\\Scripts\\GameEvents.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\Enums\\eGameSpeedMode.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_ProjectSpecific\\Scripts\\Enums\\eGameSpeedMode.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\Controls\\TurboButton.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_ProjectSpecific\\Scripts\\Controls\\TurboButton.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\MainSymbolConfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\_ProjectSpecific\\MainSymbolConfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameEvents.ts",
+              "DocumentMoniker": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\GameEvents.ts",
+              "RelativeDocumentMoniker": "assets\\_ProjectSpecific\\Scripts\\GameEvents.ts",
+              "ToolTip": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\GameEvents.ts",
+              "RelativeToolTip": "assets\\_ProjectSpecific\\Scripts\\GameEvents.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-06-10T10:34:13.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SpinButton.ts",
+              "DocumentMoniker": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\Controls\\SpinButton.ts",
+              "RelativeDocumentMoniker": "assets\\_ProjectSpecific\\Scripts\\Controls\\SpinButton.ts",
+              "ToolTip": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\Controls\\SpinButton.ts",
+              "RelativeToolTip": "assets\\_ProjectSpecific\\Scripts\\Controls\\SpinButton.ts",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwEEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-06-10T10:21:33.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Symbol.ts",
+              "DocumentMoniker": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Symbol.ts",
+              "RelativeDocumentMoniker": "assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Symbol.ts",
+              "ToolTip": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Symbol.ts",
+              "RelativeToolTip": "assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Symbol.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-06-10T10:06:17.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Reel.ts",
+              "DocumentMoniker": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Reel.ts",
+              "RelativeDocumentMoniker": "assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Reel.ts",
+              "ToolTip": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Reel.ts",
+              "RelativeToolTip": "assets\\_ProjectSpecific\\Scripts\\SlotMachine\\Reel.ts",
+              "ViewState": "AgIAACgAAAAAAAAAAAAiwD4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-06-10T10:06:13.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "eGameSpeedMode.ts",
+              "DocumentMoniker": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\Enums\\eGameSpeedMode.ts",
+              "RelativeDocumentMoniker": "assets\\_ProjectSpecific\\Scripts\\Enums\\eGameSpeedMode.ts",
+              "ToolTip": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\Enums\\eGameSpeedMode.ts",
+              "RelativeToolTip": "assets\\_ProjectSpecific\\Scripts\\Enums\\eGameSpeedMode.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-06-10T09:59:50.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReelsManager.ts",
+              "DocumentMoniker": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ReelsManager.ts",
+              "RelativeDocumentMoniker": "assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ReelsManager.ts",
+              "ToolTip": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ReelsManager.ts",
+              "RelativeToolTip": "assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ReelsManager.ts",
+              "ViewState": "AgIAALIAAAAAAAAAAAAQwL0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-06-10T09:55:23.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TurboButton.ts",
+              "DocumentMoniker": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\Controls\\TurboButton.ts",
+              "RelativeDocumentMoniker": "assets\\_ProjectSpecific\\Scripts\\Controls\\TurboButton.ts",
+              "ToolTip": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\Controls\\TurboButton.ts",
+              "RelativeToolTip": "assets\\_ProjectSpecific\\Scripts\\Controls\\TurboButton.ts",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-06-10T09:55:11.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainSymbolConfig.json",
+              "DocumentMoniker": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\MainSymbolConfig.json",
+              "RelativeDocumentMoniker": "assets\\_ProjectSpecific\\MainSymbolConfig.json",
+              "ToolTip": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\MainSymbolConfig.json",
+              "RelativeToolTip": "assets\\_ProjectSpecific\\MainSymbolConfig.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-10T06:26:46.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResultsGenerator.ts",
+              "DocumentMoniker": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ResultsGenerator.ts",
+              "RelativeDocumentMoniker": "assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ResultsGenerator.ts",
+              "ToolTip": "F:\\Cocos Projects\\SlotGameProgrammingTest\\assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ResultsGenerator.ts",
+              "RelativeToolTip": "assets\\_ProjectSpecific\\Scripts\\SlotMachine\\ResultsGenerator.ts",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-06-10T12:41:25.058Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

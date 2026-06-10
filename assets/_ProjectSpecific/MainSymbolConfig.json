@@ -1,0 +1,52 @@
+{
+  "symbolList": [
+    {
+      "id": 0,
+      "spritePath": "Symbols/Apple",
+      "payout3x": 50,
+      "weight": 50
+    },
+    {
+      "id": 1,
+      "spritePath": "Symbols/Banana",
+      "payout3x": 50,
+      "weight": 50
+    },
+    {
+      "id": 2,
+      "spritePath": "Symbols/BlueCandy",
+      "payout3x": 150,
+      "weight": 25
+    },
+    {
+      "id": 3,
+      "spritePath": "Symbols/Grapes",
+      "payout3x": 150,
+      "weight": 25
+    },
+    {
+      "id": 4,
+      "spritePath": "Symbols/Peach",
+      "payout3x": 500,
+      "weight": 10
+    },
+    {
+      "id": 5,
+      "spritePath": "Symbols/PinkCandy",
+      "payout3x": 500,
+      "weight": 10
+    },
+    {
+      "id": 6,
+      "spritePath": "Symbols/StarJelly",
+      "payout3x": 1000,
+      "weight": 5
+    },
+    {
+      "id": 7,
+      "spritePath": "Symbols/Watermelon",
+      "payout3x": 1000,
+      "weight": 5
+    }
+  ]
+}
