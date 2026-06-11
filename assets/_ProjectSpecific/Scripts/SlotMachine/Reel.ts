@@ -153,5 +153,34 @@ export class Reel extends Component {
 
     }
 
+
+    public async InstantResult(targetSymbolIds: number[]): Promise<void>  {
+
+        this._state = eReelState.SPINNING;
+
+        this.finalTargetIds = targetSymbolIds;
+
+        // await a Cocos Frame to avoid instant shifting of state
+        await this.waitForCocosFrame();
+
+        for (var i = 0; i < this.finalTargetIds.length; i++) {
+
+            // i + 1 for this.symbols because we need to start from the first visible symbol on top
+            this.symbols[i + 1].SetData(this.finalTargetIds[i], ReelsManager.instance.GetSpriteFrameById(this.finalTargetIds[i]));
+
+        }
+
+        this._state = eReelState.IDLE;
+
+    }
+
+
+    private waitForCocosFrame(): Promise<void> {
+        return new Promise(resolve => {
+            this.scheduleOnce(() => resolve(), 0);
+        });
+    }
+
+
 }
 

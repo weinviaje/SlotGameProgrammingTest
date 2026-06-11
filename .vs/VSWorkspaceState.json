@@ -3,8 +3,9 @@
     "",
     "\\assets",
     "\\assets\\_ProjectSpecific",
-    "\\assets\\_ProjectSpecific\\Scripts"
+    "\\assets\\_ProjectSpecific\\Scripts",
+    "\\assets\\_ProjectSpecific\\Scripts\\Controls"
   ],
-  "SelectedNode": "\\assets\\_ProjectSpecific\\MainSymbolConfig.json",
+  "SelectedNode": "\\assets\\_ProjectSpecific\\Scripts\\Controls\\SpinButton.ts",
   "PreviewInSolutionExplorer": false
 }

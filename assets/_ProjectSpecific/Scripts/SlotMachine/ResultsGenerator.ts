@@ -2,11 +2,19 @@
 const { ccclass, property } = _decorator;
 
 // Structuring our data configuration layout
-interface SymbolData {
+export interface SymbolData {
     id: number;
     name: string;
     payout3x: number; // Payout value if 3 matching symbols land on a payline
     weight: number;   // Higher weight = more common; Lower weight = rare/jackpot
+}
+
+export interface SpinResult {
+
+    matrix: number[][];
+    totalWin: number;
+    winningPaylines: number[];
+
 }
 
 @ccclass('ResultsGenerator')
@@ -41,7 +49,7 @@ export class ResultsGenerator extends Component {
     /**
      * Call this from ReelsManager to execute a new spin algorithm configuration pass
      */
-    public GenerateSpinResult(): { matrix: number[][], totalWin: number, winningPaylines: number[] } {
+    public GenerateSpinResult(): SpinResult {
         // 1. Generate a clean 3x3 matrix populated with random Symbol IDs based on weights
         const matrix: number[][] = [
             [0, 0, 0], // Row 0 (Top Row)

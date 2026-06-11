@@ -2,7 +2,7 @@ import { _decorator, Component, SpriteFrame, JsonAsset, resources, director, Enu
 import { GameEvents } from '../GameEvents';
 import { Reel } from './Reel';
 import { SymbolConfig } from '../SymbolConfig'; // Import your pure data structure
-import { ResultsGenerator } from './ResultsGenerator';
+import { ResultsGenerator, SpinResult } from './ResultsGenerator';
 import { eGameSpeedMode } from '../Enums/eGameSpeedMode';
 const { ccclass, property } = _decorator;
 
@@ -48,6 +48,12 @@ export class ReelsManager extends Component {
     
     // A quick lookup table for pre-loaded images: Key = symbol ID, Value = SpriteFrame
     private _spriteCache: Map<number, SpriteFrame> = new Map();
+
+    // Local cache for every spin result
+    private _spinResult: SpinResult | null = null;
+    // Getter for _spinResult value
+    public get GetSpinResult(): SpinResult | null { return this._spinResult }
+
     // #endregion
 
     // #region INITIALIZATION
@@ -162,8 +168,8 @@ export class ReelsManager extends Component {
     public async StartSlotSequence(): Promise<void> {
 
 
-        const spinData = ResultsGenerator.instance.GenerateSpinResult();
-        console.log(`Total spin sequence payouts generated: Payout Value = ${spinData.totalWin}`);
+        this._spinResult = ResultsGenerator.instance.GenerateSpinResult();
+        console.log(`Total spin sequence payouts generated: Payout Value = ${this._spinResult.totalWin}`);
 
 
         this._isSequenceRunning = true;
@@ -176,19 +182,9 @@ export class ReelsManager extends Component {
         // ==========================================
         // STEP CONFIGURATION MATRIX
         // ==========================================
-        if (this.currentSpeedMode === eGameSpeedMode.TURBO) {
+        if (this.currentSpeedMode != eGameSpeedMode.TURBO) {
 
-            // 1. TURBO MODE: All reels stop simultaneously and spin exactly once (minimal steps)
-            // Set this to your minimum layout resolution (e.g., 1 full rotation pass)
-            const minimalTurboSteps = 5;
-
-            reel0Steps = minimalTurboSteps;
-            reel1Steps = minimalTurboSteps;
-            reel2Steps = minimalTurboSteps;
-
-        } else {
-
-            // 2. SPEED MODE VS NORMAL MODE: Calculate the speed step scaler
+            // SPEED MODE VS NORMAL MODE: Calculate the speed step scaler
             // SPEED mode cuts the tracking steps/time duration exactly in half (0.5x)
             const speedMultiplier = (this.currentSpeedMode === eGameSpeedMode.SPEED) ? 0.5 : 1.0;
 
@@ -205,15 +201,29 @@ export class ReelsManager extends Component {
         // EXECUTION PASS
         // ==========================================
         // Extract columns from the 3x3 matrix: [Row0, Row1, Row2] for each column
-        const reel0Targets = [spinData.matrix[0][0], spinData.matrix[1][0], spinData.matrix[2][0]];
-        const reel1Targets = [spinData.matrix[0][1], spinData.matrix[1][1], spinData.matrix[2][1]];
-        const reel2Targets = [spinData.matrix[0][2], spinData.matrix[1][2], spinData.matrix[2][2]];
+        const reel0Targets = [this._spinResult.matrix[0][0], this._spinResult.matrix[1][0], this._spinResult.matrix[2][0]];
+        const reel1Targets = [this._spinResult.matrix[0][1], this._spinResult.matrix[1][1], this._spinResult.matrix[2][1]];
+        const reel2Targets = [this._spinResult.matrix[0][2], this._spinResult.matrix[1][2], this._spinResult.matrix[2][2]];
 
-        await Promise.all([
-            this.reels[0].SpinReel(reel0Steps, reel0Targets),
-            this.reels[1].SpinReel(reel1Steps, reel1Targets),
-            this.reels[2].SpinReel(reel2Steps, reel2Targets)
-        ]);
+        if (this.currentSpeedMode === eGameSpeedMode.TURBO) {
+
+            // PRODUCE INSTANT RESULTS ON TURBO MODE
+            await Promise.all([
+                this.reels[0].InstantResult(reel0Targets),
+                this.reels[1].InstantResult(reel1Targets),
+                this.reels[2].InstantResult(reel2Targets)
+            ]);
+
+        }
+        else {
+
+            await Promise.all([
+                this.reels[0].SpinReel(reel0Steps, reel0Targets),
+                this.reels[1].SpinReel(reel1Steps, reel1Targets),
+                this.reels[2].SpinReel(reel2Steps, reel2Targets)
+            ]);
+        }
+        
 
 
         this._isSequenceRunning = false;
