@@ -174,11 +174,36 @@ export class Reel extends Component {
 
     }
 
-
+    // Created specifically to await a Cocos Frame
     private waitForCocosFrame(): Promise<void> {
         return new Promise(resolve => {
             this.scheduleOnce(() => resolve(), 0);
         });
+    }
+
+
+
+    // For animating the symbols after match
+    public AnimateSymbolAtRow(rowIndex: number): void {
+
+        // Add +1 to skip your top invisible buffer slot!
+        const visualIndex = rowIndex + 1;
+
+        if (visualIndex >= 0 && visualIndex < this.symbols.length) {
+            const targetSymbol = this.symbols[visualIndex];
+            if (targetSymbol) {
+                targetSymbol.PlayWinAnimation();
+            }
+        }
+    }
+
+
+    public ResetAllSymbols(): void {
+        for (var i = 0; i < this.symbols.length; i++) {
+
+            this.symbols[i].ResetAnimation();
+
+        }
     }
 
 

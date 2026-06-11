@@ -82,6 +82,7 @@ export class ReelsManager extends Component {
 
         // Subscribe to the global events channel
         director.on(GameEvents.ON_SPIN_CLICKED, this.OnSpinClicked, this);
+        director.on(GameEvents.ON_SPIN_CLICKED, this.ResetAllReelAnimations, this);
         director.on(GameEvents.ON_STOP_CLICKED, this.StopAllReels, this);
         director.on(GameEvents.ON_SPEED_CHANGED, this.OnSpeedChanged, this);
         
@@ -103,6 +104,7 @@ export class ReelsManager extends Component {
 
         // ALWAYS unsubscribe when the node dies to prevent memory leaks!
         director.off(GameEvents.ON_SPIN_CLICKED, this.OnSpinClicked, this);
+        director.off(GameEvents.ON_SPIN_CLICKED, this.ResetAllReelAnimations, this);
         director.off(GameEvents.ON_STOP_CLICKED, this.StopAllReels, this);
         director.off(GameEvents.ON_SPEED_CHANGED, this.OnSpeedChanged, this);
 
@@ -229,6 +231,12 @@ export class ReelsManager extends Component {
         this._isSequenceRunning = false;
         director.emit(GameEvents.ON_SEQUENCE_STOPPED);
 
+        if (this._spinResult.totalWin != 0) {
+
+            this.AnimateWinningLines(this._spinResult.winningPaylines);
+
+        }
+
     }
 
 
@@ -260,7 +268,51 @@ export class ReelsManager extends Component {
     }
 
 
+
+    /**
+     * Loops through the winning paylines and delegates animations down to the Reels
+     */
+    private AnimateWinningLines(winningPaylines: number[]): void {
+        // The exact same 5 coordinate definitions from your ResultsGenerator
+        const paylineDefinitions = [
+            [[0, 0], [0, 1], [0, 2]], // Line 0: Top Row
+            [[1, 0], [1, 1], [1, 2]], // Line 1: Middle Row
+            [[2, 0], [2, 1], [2, 2]], // Line 2: Bottom Row
+            [[0, 0], [1, 1], [2, 2]], // Line 3: Diagonal Down
+            [[2, 0], [1, 1], [0, 2]]  // Line 4: Diagonal Up
+        ];
+
+        // Loop through the list of hit lines (e.g., [0, 4])
+        winningPaylines.forEach(lineIndex => {
+            const coordinateMap = paylineDefinitions[lineIndex];
+
+            // Loop through each of the 3 coordinates inside this winning line
+            coordinateMap.forEach(coords => {
+                const row = coords[0]; // Vertical position (0, 1, or 2)
+                const col = coords[1]; // Horizontal Column/Reel position (0, 1, or 2)
+
+                // 1. Find the correct column Reel component using 'col'
+                const targetReel = this.reels[col];
+
+                // 2. Hand off the row index to that Reel
+                if (targetReel) {
+                    targetReel.AnimateSymbolAtRow(row);
+                }
+            });
+        });
+    }
+
+
+    private ResetAllReelAnimations(): void {
+        for (var i = 0; i < this.reels.length; i++) {
+
+            this.reels[i].ResetAllSymbols();
+
+        }
+    }
+
 }
+
 
 
     
